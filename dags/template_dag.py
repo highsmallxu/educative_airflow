@@ -7,7 +7,7 @@ from airflow.providers.google.cloud.operators.bigquery import BigQueryInsertJobO
     start_date=pendulum.datetime(2023, 1, 1, tz="UTC"),
     catchup=False,
     tags=["educative"],
-    template_searchpath=["/Users/xiaoxugao/Documents/Projects/educative/educative_airflow/sql"])
+    template_searchpath=["/usercode/sql"])
 def educative_dag6():
 
     BigQueryInsertJobOperator(
